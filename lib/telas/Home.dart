@@ -1,6 +1,6 @@
 import 'package:aprenda_ingles/telas/Bichos.dart';
 import 'package:aprenda_ingles/telas/Numeros.dart';
-import 'package:aprenda_ingles/telas/Vogais.dart';
+import 'package:aprenda_ingles/telas/Frutas.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -31,7 +31,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Aprenda inglês"),
+        centerTitle: true,
+        title: Text("Aprendendo inglês"),
         bottom: TabBar(
           indicatorWeight: 4,
           indicatorColor: Colors.white,
@@ -45,7 +46,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           tabs: <Widget>[
             Tab(text: "Bichos",),
             Tab(text: "Números",),
-            Tab(text: "Vogais",),
+            Tab(text: "Frutas",),
           ],
         ),
       ),
@@ -54,7 +55,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         children: <Widget>[
           Bichos(),
           Numeros(),
-          Vogais()
+          Frutas()
         ],
       ),
     );

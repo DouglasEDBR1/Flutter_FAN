@@ -78,8 +78,15 @@ flutter:
      - assets/imagens/4.png
      - assets/imagens/5.png
      - assets/imagens/6.png
+     - assets/imagens/banana.png
+     - assets/imagens/maca.png
+     - assets/imagens/pera.png
+     - assets/imagens/melancia.png
+     - assets/imagens/uva.png
+     - assets/imagens/laranja.png
      - assets/imagens/segundo_fundo.jpg
      - assets/imagens/segundo_fundo.png
+
 
     #audios
      - assets/audios/1.mp3
@@ -94,6 +101,12 @@ flutter:
      - assets/audios/macaco.mp3
      - assets/audios/ovelha.mp3
      - assets/audios/vaca.mp3
+     - assets/audios/laranja.mp3
+     - assets/audios/maca.mp3
+     - assets/audios/uva.mp3
+     - assets/audios/melancia.mp3
+     - assets/audios/banana.mp3
+     - assets/audios/pera.mp3
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

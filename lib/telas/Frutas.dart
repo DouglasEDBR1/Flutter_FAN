@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 
-class Numeros extends StatefulWidget {
+class Frutas extends StatefulWidget {
   @override
-  _NumerosState createState() => _NumerosState();
+  _FrutasState createState() => _FrutasState();
 }
 
-class _NumerosState extends State<Numeros> {
+class _FrutasState extends State<Frutas> {
 
   AudioCache _audioCache = AudioCache(prefix: "audios/");
 
@@ -17,14 +17,7 @@ class _NumerosState extends State<Numeros> {
 
   }
 
-  @override
-  void initState() {
-    super.initState();
-    _audioCache.loadAll([
-      "cao.mp3", "gato.mp3", "leao.mp3",
-      "macaco.mp3", "ovelha.mp3", "vaca.mp3",
-    ]);
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -39,39 +32,39 @@ class _NumerosState extends State<Numeros> {
       children: <Widget>[
         GestureDetector(
           onTap: (){
-            _executar("1");
+            _executar("laranja");
           },
-          child: Image.asset("assets/imagens/1.png"),
+          child: Image.asset("assets/imagens/laranja.png"),
         ),
         GestureDetector(
           onTap: (){
-            _executar("2");
+            _executar("uva");
           },
-          child: Image.asset("assets/imagens/2.png"),
+          child: Image.asset("assets/imagens/uva.png"),
         ),
         GestureDetector(
           onTap: (){
-            _executar("3");
+            _executar("pera");
           },
-          child: Image.asset("assets/imagens/3.png"),
+          child: Image.asset("assets/imagens/pera.png"),
         ),
         GestureDetector(
           onTap: (){
-            _executar("4");
+            _executar("melancia");
           },
-          child: Image.asset("assets/imagens/4.png"),
+          child: Image.asset("assets/imagens/melancia.png"),
         ),
         GestureDetector(
           onTap: (){
-            _executar("5");
+            _executar("banana");
           },
-          child: Image.asset("assets/imagens/5.png"),
+          child: Image.asset("assets/imagens/banana.png"),
         ),
         GestureDetector(
           onTap: (){
-            _executar("6");
+            _executar("maca");
           },
-          child: Image.asset("assets/imagens/6.png"),
+          child: Image.asset("assets/imagens/maca.png"),
         ),
       ],
     );
